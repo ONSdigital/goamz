@@ -152,14 +152,13 @@ var EUWest2 = Region{
 	"https://iam.amazonaws.com",
 	"https://elasticloadbalancing.eu-west-2.amazonaws.com",
 	"https://dynamodb.eu-west-2.amazonaws.com",
-	"https://monitoring.eu-west-2.amazonaws.com",
+	ServiceInfo{"https://monitoring.eu-west-2.amazonaws.com", V2Signature},
 	"https://autoscaling.eu-west-2.amazonaws.com",
-	"https://rds.eu-west-2.amazonaws.com",
+	ServiceInfo{"https://rds.eu-west-2.amazonaws.com", V2Signature},
 	"https://sts.amazonaws.com",
 	"https://cloudformation.eu-west-2.amazonaws.com",
 	"https://ecs.eu-west-2.amazonaws.com",
 	"https://streams.dynamodb.eu-west-2.amazonaws.com",
-	SignV4Region("eu-west-2"),
 }
 
 var EUCentral = Region{
